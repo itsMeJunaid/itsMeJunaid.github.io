@@ -995,23 +995,35 @@ footer span a:hover {
     text-decoration: underline;
 }
 
+/* =============================================================================================== */
 
 /* responsive media query start */
 
 @media (max-width: 1104px) {
+    .content{
+        width: 370px;
+    }
     .about .about-content .left img {
+        
         height: 100%;
         width: 100%;
     }
 }
 
 @media (max-width: 991px) {
+    
+    .content{
+        width: 370px;
+    }
     .max-width {
         padding: 0 50px;
     }
 }
 
 @media (max-width: 947px) {
+    .content{
+        width: 370px;
+    }
     .menu-btn {
         display: block;
         z-index: 999;
@@ -1077,8 +1089,11 @@ footer span a:hover {
 }
 
 @media (max-width: 690px) {
+    .content{
+        width: 370px;
+    }
     .max-width {
-        padding: 0 23px;
+        padding: 0 25px;
     }
     .home .home-content .text-2 {
         font-size: 60px;
@@ -1095,11 +1110,14 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
+    .content{
+        width: 370px;
+    }
     .home .home-content .text-2 {
         font-size: 50px;
     }
     .home .home-content .text-3 {
-        font-size: 27px;
+        font-size: 30px;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text {
@@ -1122,5 +1140,205 @@ footer span a:hover {
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+}
+
+@media (max-width: 400px) {
+    .max-width {
+        padding: 0 30px;
+    }
+    /* .navbar {
+        width: 100px;
+    } */
+    .content{
+        width: 370px;
+    }
+    .home .home-content .text-2 {
+        font-size: 40px;
+    }
+    .home .home-content .text-3 {
+        font-size: 30px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 30px;
+    }
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email {
+        margin: 0;
+    }
+    .right form .error-box {
+        width: 100px;
+    }
+    .scroll-up-btn {
+        right: 50px;
+        bottom: 10px;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .max-width {
+        padding: 0 10px;
+    }
+    /* .navbar {
+        width: 100px;
+    } */
+    .content{
+        width: 350px;
+    }
+    .home .home-content .text-2 {
+        font-size: 40px;
+    }
+    .home .home-content .text-3 {
+        font-size: 30px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 30px;
+    }
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email {
+        margin: 0;
+    }
+    .right form .error-box {
+        width: 100px;
+    }
+    .scroll-up-btn {
+        right: 50px;
+        bottom: 10px;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .max-width {
+        padding: 0 10px;
+    }
+    /* .navbar {
+        width: 100px;
+    } */
+    .content{
+        width: 350px;
+    }
+    .home .home-content .text-2 {
+        font-size: 40px;
+    }
+    .home .home-content .text-3 {
+        font-size: 30px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 30px;
+    }
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email {
+        margin: 0;
+    }
+    .right form .error-box {
+        width: 100px;
+    }
+    .scroll-up-btn {
+        right: 50px;
+        bottom: 10px;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 390px) {
+    .max-width {
+        padding: 0 10px;
+    }
+    /* .navbar {
+        width: 100px;
+    } */
+    .content{
+        width: 350px;
+    }
+    .home .home-content .text-2 {
+        font-size: 40px;
+    }
+    .home .home-content .text-3 {
+        font-size: 30px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 30px;
+    }
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email {
+        margin: 0;
+    }
+    .right form .error-box {
+        width: 100px;
+    }
+    .scroll-up-btn {
+        right: 50px;
+        bottom: 10px;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .max-width {
+        padding: 0 10px;
+    }
+    /* .navbar {
+        width: 100px;
+    } */
+    .content{
+        width: 350px;
+    }
+    .home .home-content .text-2 {
+        font-size: 35px;
+    }
+    .home .home-content .text-3 {
+        font-size: 25px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 30px;
+    }
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email {
+        margin: 0;
+    }
+    .right form .error-box {
+        width: 100px;
+    }
+    .scroll-up-btn {
+        right: 50px;
+        bottom: 10px;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        line-height: 30px;
     }
 }
