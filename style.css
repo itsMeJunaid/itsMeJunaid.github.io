@@ -201,7 +201,7 @@ section .title::after {
 
 .home {
     display: flex;
-    background: url("images/profile\ 1.5.png") no-repeat center;
+    background: url("https://raw.githubusercontent.com/itsMeJunaid/resume/main/profile%201.5.png") no-repeat center;
     height: 100vh;
     color: #ffffff;
     min-height: 500px;
