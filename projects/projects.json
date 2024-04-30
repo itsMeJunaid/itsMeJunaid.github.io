@@ -1,0 +1,43 @@
+[
+  {
+    "name": "University Chatbot...",
+    "desc": "University Chatbot: Python-powered, AI-driven, Flask-fueled conversational interface for student support.",
+    "image": "chatbot",
+    "category": "mern",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Weather Web App",
+    "desc": 
+    "Weather Web App: Built with HTML, CSS, JS, and JSON for seamless weather updates on the go!",
+    "image": "weatherweb",
+    "category": "mern",
+    "links": {
+      "view": "https://itsmejunaid.github.io/JKWeather-WebAPP/",
+      "code": "https://github.com/itsMeJunaid/JKWeather-WebAPP"
+    }
+  },
+  {
+    "name": "Data Pre-processing",
+    "desc": "Taming raw data! This project cleans & organizes datasets for analysis & machine learning.",
+    "image": "dataproc",
+    "category": "mern",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Face Detection OpenCV",
+    "desc": "Sharpening your sight! This project uses OpenCV to build a face detector application.",
+    "image": "facedetection",
+    "category": "mern",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  }
+]
