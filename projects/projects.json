@@ -33,7 +33,7 @@
   {
     "name": "Face Detection OpenCV",
     "desc": "Sharpening your sight! This project uses OpenCV to build a face detector application.",
-    "image": "facedetection",
+    "image": "facedet",
     "category": "mern",
     "links": {
       "view": "#",
