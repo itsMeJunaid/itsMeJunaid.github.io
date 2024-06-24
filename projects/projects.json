@@ -3,7 +3,7 @@
     "name": "University Chatbot...",
     "desc": "University Chatbot: Python-powered, AI-driven, Flask-fueled conversational interface for student support.",
     "image": "chatbot",
-    "category": "mern",
+    "category": "ml",
     "links": {
       "view": "#",
       "code": "#"
@@ -14,7 +14,7 @@
     "desc": 
     "Weather Web App: Built with HTML, CSS, JS, and JSON for seamless weather updates on the go!",
     "image": "weatherweb",
-    "category": "mern",
+    "category": "ml",
     "links": {
       "view": "https://itsmejunaid.github.io/JKWeather-WebAPP/",
       "code": "https://github.com/itsMeJunaid/JKWeather-WebAPP"
@@ -24,7 +24,7 @@
     "name": "Data Pre-processing",
     "desc": "Taming raw data! This project cleans & organizes datasets for analysis & machine learning.",
     "image": "dataproc",
-    "category": "mern",
+    "category": "ml",
     "links": {
       "view": "#",
       "code": "#"
@@ -34,10 +34,20 @@
     "name": "Face Detection OpenCV",
     "desc": "Sharpening your sight! This project uses OpenCV to build a face detector application.",
     "image": "facedet",
-    "category": "mern",
+    "category": "ml",
     "links": {
       "view": "#",
       "code": "#"
+    }
+  },
+  {
+    "name": "Laptop Price Prediction",
+    "desc": "In this app, they predict the price of a new laptop based on its specifications.",
+    "image": "laptoppr",
+    "category": "ml",
+    "links": {
+      "view": "https://laptoppr.streamlit.app",
+      "code": "https://github.com/itsMeJunaid/Laptop-Price-Prediction/"
     }
   }
 ]
