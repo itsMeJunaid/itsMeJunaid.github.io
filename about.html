@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>About Me</title>
+    <meta name="description" content="Learn about my journey, skills, and expertise in AI and Machine Learning">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="icon" type="image/png" href="assets\images\logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">AI<span class="highlight">ML</span>Dev</a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Animated Profile -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1 class="reveal-text">About <span class="highlight">Me</span></h1>
+            <div class="tagline reveal-text-delay">AI Engineer, ML Researcher, Data Scientist</div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-image-container">
+                <div class="image-frame">
+                    <img src="/assets/images/imgg.png" alt="Profile Image" class="profile-image">
+                    <div class="circle-animation"></div>
+                    <div class="circle-animation small"></div>
+                </div>
+                <div class="profile-floating-icons">
+                    <div class="floating-icon" style="--delay: 0s"><i class="fas fa-brain"></i></div>
+                    <div class="floating-icon" style="--delay: 2s"><i class="fas fa-code"></i></div>
+                    <div class="floating-icon" style="--delay: 4s"><i class="fas fa-robot"></i></div>
+                    <div class="floating-icon" style="--delay: 6s"><i class="fas fa-chart-network"></i></div>
+                    <div class="floating-icon" style="--delay: 8s"><i class="fas fa-database"></i></div>
+                </div>
+            </div>
+            <div class="profile-info">
+                <h2 class="slide-in-right">Hello, I'm <span class="highlight">Muhammad Junaid</span></h2>
+                <p class="bio fade-in">I'm a passionate AI & Machine Learning Developer with over 2 years of experience developing cutting-edge solutions for complex problems. My expertise spans deep learning, computer vision, natural language processing, Ai Driven Flutter Apps, Machine Learning  and reinforcement learning.</p>
+                <p class="bio fade-in-delay-1">Driven by curiosity and a desire to push the boundaries of what's possible with AI, I combine technical expertise with a creative approach to problem solving.</p>
+                
+                <div class="quick-info fade-in-delay-2">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Pakistan, Azad Kashmir (Open to Remote)</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>B.S. in Software Engineering, AI Specialization (continue)</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Freelancer</span>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons fade-in-delay-3">
+                    <a href="assets/resume.pdf" class="btn primary" target="_blank">Download Resume</a>
+                    <a href="contact.html" class="btn secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Timeline -->
+    <section class="journey-section">
+        <h2 class="section-title"><span class="highlight">My</span> Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-date">2024 - Present</div>
+                    <h3>AI & ML Engineer</h3>
+                    <h4>Xact Mind Pvt Ltd.</h4>
+                    <p>🚀 AI & ML Engineer at Xact Mind Pvt Ltd., building intelligent solutions with Machine Learning, Deep Learning, and AI-driven automation. Passionate about model optimization, predictive analytics, and ethical AI. Driving innovation to shape the future of AI! 🤖</p>
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-date">2021 - 2023</div>
+                    <h3>Data Analyst</h3>
+                    <h4>Self Employed</h4>
+                    <p>📊 Data Analyst | Self-Employed 🔍 Turning raw data into actionable insights with expertise in data visualization, analytics, and predictive modeling. Passionate about data-driven decision-making and uncovering hidden patterns to drive business growth! 🚀
+                    </p>
+                    <div class="timeline-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-date">2022 - 2024</div>
+                    <h3>AI Research Assistant</h3>
+                    <h4>University Research Lab</h4>
+                    <p>Researched reinforcement learning algorithms for robotics applications. Co-authored two papers published in top-tier conferences.</p>
+                    <div class="timeline-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-date">2022 - continue</div>
+                    <h3>B.S. Software Engineering</h3>
+                    <h4>University of Kotli AJ&K</h4>
+                    <p>Specialized in Artificial Intelligence and Machine Learning. Thesis: "Novel Approaches to Transfer Learning in Computer Vision."</p>
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with 3D Rotating Cube -->
+    <section class="skills-section">
+        <h2 class="section-title"><span class="highlight">Technical</span> Skills</h2>
+        
+        <div class="skills-3d-container">
+            <div class="cube-container">
+                <div class="cube">
+                    <div class="cube-face front">
+                        <h3>Deep Learning</h3>
+                        <ul>
+                            <li>TensorFlow</li>
+                            <li>PyTorch</li>
+                            <li>Keras</li>
+                            <li>Neural Network Design</li>
+                            <li>Transfer Learning</li>
+                        </ul>
+                    </div>
+                    <div class="cube-face back">
+                        <h3>Computer Vision</h3>
+                        <ul>
+                            <li>OpenCV</li>
+                            <li>Object Detection</li>
+                            <li>Image Segmentation</li>
+                            <li>Face Recognition</li>
+                            <li>Pose Estimation</li>
+                        </ul>
+                    </div>
+                    <div class="cube-face right">
+                        <h3>NLP</h3>
+                        <ul>
+                            <li>BERT</li>
+                            <li>Transformer Models</li>
+                            <li>Sentiment Analysis</li>
+                            <li>Language Generation</li>
+                            <li>Text Classification</li>
+                        </ul>
+                    </div>
+                    <div class="cube-face left">
+                        <h3>Data Science</h3>
+                        <ul>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Scikit-learn</li>
+                            <li>Data Visualization</li>
+                            <li>Statistical Analysis</li>
+                        </ul>
+                    </div>
+                    <div class="cube-face top">
+                        <h3>Programming</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>R</li>
+                            <li>SQL</li>
+                            <li>JavaScript</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                    <div class="cube-face bottom">
+                        <h3>Cloud & DevOps</h3>
+                        <ul>
+                            <li>Google Colab</li>
+                            <li>Google Cloud</li>
+                            <li>Docker</li>
+                            <li>Anaconda</li>
+                            <li>Hugging Face </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-text">
+                <p class="fade-in">My technical expertise spans various domains of AI and machine learning, allowing me to approach problems from multiple angles and implement innovative solutions.</p>
+                <p class="fade-in-delay-1">I'm constantly learning and expanding my skillset to stay at the cutting edge of AI technology.</p>
+                <div class="cube-controls fade-in-delay-2">
+                    <button id="rotate-cube" class="btn secondary">Rotate Cube</button>
+                    <button id="stop-cube" class="btn secondary">Stop Rotation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Interests -->
+    <section class="interests-section">
+        <h2 class="section-title">When I'm Not <span class="highlight">Coding</span></h2>
+        
+        <div class="interests-container">
+            <div class="interest-card" data-tilt>
+                <div class="interest-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Reading</h3>
+                <p>I enjoy diving into books about AI ethics, futurism, and science fiction that explores the impact of technology on society.</p>
+            </div>
+            
+            <div class="interest-card" data-tilt>
+                <div class="interest-icon">
+                    <i class="fas fa-mountain"></i>
+                </div>
+                <h3>Hiking</h3>
+                <p>Exploring nature trails helps me clear my mind and often leads to creative solutions for complex problems.</p>
+            </div>
+            
+            <div class="interest-card" data-tilt>
+                <div class="interest-icon">
+                    <i class="fas fa-chess"></i>
+                </div>
+                <h3>Chess</h3>
+                <p>The strategic thinking required in chess complements my approach to designing AI algorithms and systems.</p>
+            </div>
+            
+            <div class="interest-card" data-tilt>
+                <div class="interest-icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <h3>Crypto Currency Trading</h3>
+                <p>I analyze market trends, trade digital assets, and leverage data-driven strategies to navigate the crypto space.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <h2 class="section-title">What People <span class="highlight">Say</span></h2>
+        
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">"An exceptional AI engineer who consistently delivers innovative solutions. Their deep understanding of machine learning algorithms and ability to apply them to real-world problems is remarkable."</p>
+                <div class="testimonial-author">
+                    <div class="author-image"><img src="assets\images\alex_pic_2-1-688x675.jpg" alt="" srcset=""></div>
+                    
+                    <div class="author-info">
+                        <h4>Dr. Alex Johnson</h4>
+                        <p>CTO, TechCorp Inc.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">"Working with them on our NLP project was a game-changer. They not only have technical expertise but also the ability to explain complex concepts in an accessible way."</p>
+                <div class="testimonial-author">
+                    <div class="author-image"><img src="assets\images\Mic.jpg" alt="" srcset=""></div>
+                    <div class="author-info">
+                        <h4>Michael Johnson</h4>
+                        <p>Lead Developer, DataInnovate</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">"Their research contributions to reinforcement learning algorithms were instrumental in our robotics breakthrough. A brilliant mind with a collaborative spirit."</p>
+                <div class="testimonial-author">
+                    <div class="author-image"><img src="assets\images\pt.jpg" alt="" srcset=""></div>
+                    <div class="author-info">
+                        <h4>Prof. Robert Chen</h4>
+                        <p>AI Research Director, Tech University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Let's build something <span class="highlight">remarkable</span> together</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            <a href="contact.html" class="btn primary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>AI<span class="highlight">ML</span>Dev</h3>
+                <p>Creating intelligent solutions through code</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mrzikomo/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/itsMeJunaid" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/itsJunaid__" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://medium.com/@aishortspot" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025  Muhammad Junaid. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>
