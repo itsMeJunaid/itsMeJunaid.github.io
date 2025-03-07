@@ -33,6 +33,44 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    
+const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        // Set initial state
+        answer.style.maxHeight = "0px";
+        answer.style.opacity = "0";
+        answer.style.overflow = "hidden";
+        answer.style.transition = "max-height 0.3s ease-out, opacity 0.3s ease-out";
+
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all items before opening the new one
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    const otherAnswer = otherItem.querySelector('.faq-answer');
+                    otherAnswer.style.maxHeight = "0px";
+                    otherAnswer.style.opacity = "0";
+                }
+            });
+
+            // Toggle current item
+            item.classList.toggle('active');
+
+            if (!isActive) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                answer.style.opacity = "1";
+            } else {
+                answer.style.maxHeight = "0px";
+                answer.style.opacity = "0";
+            }
+        });
+    });
 });
 
 // Show form message (success/error)
