@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050510" />
+
+    <!-- ========== Primary SEO ========== -->
+    <title>Muhammad Junaid — AI & Machine Learning Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Muhammad Junaid — AI & ML Engineer specialising in Deep Learning, Computer Vision, NLP and chatbot development. Projects, experience, and contact." />
+    <meta name="author" content="Muhammad Junaid" />
+    <meta name="keywords" content="Muhammad Junaid, AI Engineer, Machine Learning, Deep Learning, Computer Vision, NLP, Portfolio, Chatbot, TensorFlow, PyTorch, Python" />
+    <link rel="canonical" href="https://itsmejunaid.github.io/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- ========== Open Graph ========== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Muhammad Junaid — AI/ML Portfolio" />
+    <meta property="og:title" content="Muhammad Junaid — AI & Machine Learning Engineer" />
+    <meta property="og:description" content="AI/ML Engineer specialising in Deep Learning, Computer Vision, NLP and chatbot development." />
+    <meta property="og:url" content="https://itsmejunaid.github.io/" />
+    <meta property="og:image" content="assets/images/imgg.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- ========== Twitter ========== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@itsJunaid__" />
+    <meta name="twitter:title" content="Muhammad Junaid — AI & ML Engineer Portfolio" />
+    <meta name="twitter:description" content="Projects, experience and writings from an AI/ML engineer working on vision, NLP and chatbots." />
+    <meta name="twitter:image" content="assets/images/imgg.png" />
+
+    <!-- ========== JSON-LD — Person + WebSite ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Muhammad Junaid",
+          "url": "https://itsmejunaid.github.io/",
+          "image": "https://itsmejunaid.github.io/assets/images/imgg.png",
+          "jobTitle": "AI & Machine Learning Engineer",
+          "email": "mailto:itxjunaid22@gmail.com",
+          "telephone": "+92-341-8914317",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kotli",
+            "addressRegion": "Azad Jammu & Kashmir",
+            "addressCountry": "PK"
+          },
+          "worksFor": { "@type": "Organization", "name": "Xact Mind Pvt Ltd" },
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Kotli AJ&K" },
+          "sameAs": [
+            "https://www.linkedin.com/in/mrzikomo/",
+            "https://github.com/itsMeJunaid",
+            "https://x.com/itsJunaid__",
+            "https://medium.com/@aishortspot"
+          ],
+          "knowsAbout": ["Machine Learning","Deep Learning","Computer Vision","Natural Language Processing","Python","TensorFlow","PyTorch"]
+        },
+        {
+          "@type": "WebSite",
+          "name": "Muhammad Junaid — AI/ML Portfolio",
+          "url": "https://itsmejunaid.github.io/",
+          "publisher": { "@type": "Person", "name": "Muhammad Junaid" }
+        }
+      ]
+    }
+    </script>
+
+    <!-- ========== Fonts ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- ========== Own Styles ========== -->
+    <link rel="stylesheet" href="css/spa.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+</head>
+
+<body>
+    <!-- ========== Page loader ========== -->
+    <div id="page-loader" role="status" aria-label="Loading portfolio">
+        <div class="loader-inner">
+            <div class="loader-logo">&gt; booting junaid.ai</div>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+            <div class="loader-pct">0%</div>
+        </div>
+    </div>
+
+    <!-- ========== Scroll progress ========== -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ========== Custom cursor ========== -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- ========== Background layers ========== -->
+    <div id="bg-vanta" aria-hidden="true"></div>
+    <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+    <!-- ========== Navbar ========== -->
+    <header>
+        <nav class="nav" aria-label="Primary">
+            <a class="nav-logo" href="#home">junaid<span class="dot">_</span>dev</a>
+            <div class="nav-links" role="list">
+                <span class="nav-pill" aria-hidden="true"></span>
+                <a href="#home" class="active" role="listitem">Home</a>
+                <a href="#projects" role="listitem">Projects</a>
+                <a href="#about" role="listitem">About</a>
+                <a href="#experience" role="listitem">Experience</a>
+                <a href="#contact" role="listitem">Contact</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle colour scheme">☾</button>
+            <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="nav-mobile" aria-hidden="true">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========================================================= HERO -->
+        <section id="home" class="hero" aria-label="Introduction">
+            <div class="container hero-inner">
+                <div>
+                    <div class="hero-kicker">Hello world — I'm</div>
+                    <h1 class="hero-title">
+                        <span class="line">Muhammad Junaid.</span>
+                    </h1>
+                    <p class="hero-role" data-typer='["AI &amp; Machine Learning Engineer","Computer Vision Researcher","NLP &amp; Chatbot Developer","Open Source Contributor"]'>
+                        <span class="typer-text"></span><span class="cursor"></span>
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn primary"><i class="fas fa-rocket"></i> View Projects</a>
+                        <a href="resume.pdf" target="_blank" rel="noopener" class="btn ghost"><i class="fas fa-file-arrow-down"></i> Download CV</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat"><div class="num" data-count="2">0</div><div class="lbl">Years Experience</div></div>
+                        <div class="hero-stat"><div class="num" data-count="25">0</div><div class="lbl">Projects Shipped</div></div>
+                        <div class="hero-stat"><div class="num" data-count="15">0</div><div class="lbl">Happy Clients</div></div>
+                        <div class="hero-stat"><div class="num" data-count="5">0</div><div class="lbl">Publications</div></div>
+                    </div>
+                </div>
+
+                <article class="name-card" data-tilt data-tilt-strength="12" aria-label="Profile card">
+                    <div class="name-card__header">
+                        <span>ID · 0x42</span>
+                        <span>● LIVE</span>
+                    </div>
+                    <div class="name-card__photo">
+                        <img src="assets/images/profile.png" alt="Muhammad Junaid portrait" loading="eager" />
+                        <div class="name-card__overlay">
+                            <div class="name-card__name">Muhammad Junaid</div>
+                            <div class="name-card__handle">@itsMeJunaid · AI Engineer</div>
+                        </div>
+                    </div>
+                    <div class="name-card__footer">
+                        <span>KOTLI · AJ&amp;K</span>
+                        <span class="name-card__chip">AI · ML · DL</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ========================================================= PROJECTS -->
+        <section id="projects" aria-label="Projects">
+            <div class="container">
+                <header class="section-head">
+                    <div class="section-eyebrow">// projects</div>
+                    <h2 class="section-title"><span class="letter-reveal">Featured </span><span class="accent letter-reveal">work</span></h2>
+                    <p class="section-sub">A selection of ML, vision and NLP projects — flip any card to see the stack and links.</p>
+                </header>
+
+                <div class="proj-filters" role="tablist" aria-label="Filter projects">
+                    <button class="active" data-filter="all" role="tab">All</button>
+                    <button data-filter="cv" role="tab">Vision</button>
+                    <button data-filter="nlp" role="tab">NLP</button>
+                    <button data-filter="ml" role="tab">ML</button>
+                    <button data-filter="dl" role="tab">Deep Learning</button>
+                </div>
+
+                <div class="proj-grid">
+                    <article class="proj-card" data-cat="cv dl">
+                        <div class="proj-inner">
+                            <div class="proj-face front">
+                                <div class="proj-thumb"><img src="assets/images/obj.png" alt="Screenshot of YOLO object detection output" loading="lazy" /></div>
+                                <h3>Advanced Object Detection</h3>
+                                <div class="proj-badges"><span>PyTorch</span><span>OpenCV</span><span>YOLO</span></div>
+                            </div>
+                            <div class="proj-face back">
+                                <h3>Advanced Object Detection</h3>
+                                <p>Real-time object recognition with deep CNNs — 60+ FPS on commodity GPUs, custom-trained on domain datasets.</p>
+                                <div class="proj-links">
+                                    <a href="https://github.com/itsMeJunaid" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proj-card" data-cat="nlp dl">
+                        <div class="proj-inner">
+                            <div class="proj-face front">
+                                <div class="proj-thumb"><img src="assets/images/sen.png" alt="Sentiment analysis dashboard" loading="lazy" /></div>
+                                <h3>Sentiment Analysis</h3>
+                                <div class="proj-badges"><span>BERT</span><span>TensorFlow</span><span>spaCy</span></div>
+                            </div>
+                            <div class="proj-face back">
+                                <h3>Sentiment Platform</h3>
+                                <p>Transformer-based emotion & sentiment classifier with batch/stream pipelines and an analytics dashboard.</p>
+                                <div class="proj-links">
+                                    <a href="https://github.com/itsMeJunaid" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proj-card" data-cat="ml">
+                        <div class="proj-inner">
+                            <div class="proj-face front">
+                                <div class="proj-thumb"><img src="assets/images/da.png" alt="Predictive analytics chart" loading="lazy" /></div>
+                                <h3>Predictive Analytics</h3>
+                                <div class="proj-badges"><span>Scikit-learn</span><span>Pandas</span><span>XGBoost</span></div>
+                            </div>
+                            <div class="proj-face back">
+                                <h3>Predictive Analytics Engine</h3>
+                                <p>Forecasting ensemble for business KPIs — automated feature engineering, drift monitoring and explainable outputs.</p>
+                                <div class="proj-links">
+                                    <a href="https://github.com/itsMeJunaid" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proj-card" data-cat="dl cv">
+                        <div class="proj-inner">
+                            <div class="proj-face front">
+                                <div class="proj-thumb"><img src="assets/images/nst.png" alt="Neural style transfer artwork" loading="lazy" /></div>
+                                <h3>Neural Style Transfer</h3>
+                                <div class="proj-badges"><span>TensorFlow</span><span>GANs</span><span>Keras</span></div>
+                            </div>
+                            <div class="proj-face back">
+                                <h3>Neural Style Transfer</h3>
+                                <p>Artistic image re-synthesis with GAN & VGG-based loss — tunable stylisation, fast inference pipeline.</p>
+                                <div class="proj-links">
+                                    <a href="https://github.com/itsMeJunaid" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proj-card" data-cat="cv dl">
+                        <div class="proj-inner">
+                            <div class="proj-face front">
+                                <div class="proj-thumb"><img src="assets/images/med.png" alt="Medical image segmentation" loading="lazy" /></div>
+                                <h3>Medical Segmentation</h3>
+                                <div class="proj-badges"><span>U-Net</span><span>PyTorch</span><span>OpenCV</span></div>
+                            </div>
+                            <div class="proj-face back">
+                                <h3>Medical Image Segmentation</h3>
+                                <p>U-Net based tumour detection with boundary-aware loss and dice-coefficient above 0.92 on held-out scans.</p>
+                                <div class="proj-links">
+                                    <a href="https://github.com/itsMeJunaid" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proj-card" data-cat="nlp ml">
+                        <div class="proj-inner">
+                            <div class="proj-face front">
+                                <div class="proj-thumb" style="background:linear-gradient(135deg,#6C63FF,#00D4FF);display:grid;place-items:center;"><i class="fas fa-robot" style="font-size:3rem;color:#fff;"></i></div>
+                                <h3>RAG Chatbot</h3>
+                                <div class="proj-badges"><span>Python</span><span>FAISS</span><span>Transformers</span></div>
+                            </div>
+                            <div class="proj-face back">
+                                <h3>Retrieval-Augmented Chatbot</h3>
+                                <p>Conversational assistant over custom docs with embedding search + reranking — deployed as a REST API.</p>
+                                <div class="proj-links">
+                                    <a href="https://github.com/itsMeJunaid" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= ABOUT -->
+        <section id="about" aria-label="About me">
+            <div class="container">
+                <header class="section-head">
+                    <div class="section-eyebrow">// about</div>
+                    <h2 class="section-title"><span class="letter-reveal">The </span><span class="accent letter-reveal">engineer</span><span class="letter-reveal"> behind the code</span></h2>
+                </header>
+
+                <div class="about">
+                    <aside class="avatar-card" data-tilt data-tilt-strength="10">
+                        <div class="avatar-badge">● Open to work</div>
+                        <div class="avatar-img"><img src="assets/images/profile.png" alt="Portrait of Muhammad Junaid" loading="lazy" /></div>
+                        <div class="avatar-social" aria-label="Social links">
+                            <a href="https://github.com/itsMeJunaid" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/mrzikomo/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/itsJunaid__" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://medium.com/@aishortspot" target="_blank" rel="noopener" aria-label="Medium"><i class="fab fa-medium-m"></i></a>
+                        </div>
+                    </aside>
+
+                    <div class="about-body">
+                        <h3>Turning messy data into useful intelligence.</h3>
+                        <p>I'm an AI &amp; Machine Learning Engineer with 2+ years of hands-on experience building intelligent systems — from computer-vision pipelines and NLP models to production-ready chatbots.</p>
+                        <p>I work best at the edge of research and engineering: prototyping with papers in one tab and deploying to production in another. Currently at Xact Mind Pvt Ltd., building model-optimisation and ethical-AI tooling.</p>
+
+                        <div class="skills-list" aria-label="Technical skills">
+                            <div class="skill" data-pct="94"><span class="name">Python</span><span class="pct">0</span><span class="track"><span class="fill"></span></span></div>
+                            <div class="skill" data-pct="90"><span class="name">Scikit-learn &amp; Pandas</span><span class="pct">0</span><span class="track"><span class="fill"></span></span></div>
+                            <div class="skill" data-pct="88"><span class="name">TensorFlow</span><span class="pct">0</span><span class="track"><span class="fill"></span></span></div>
+                            <div class="skill" data-pct="85"><span class="name">Computer Vision (OpenCV / YOLO)</span><span class="pct">0</span><span class="track"><span class="fill"></span></span></div>
+                            <div class="skill" data-pct="82"><span class="name">PyTorch</span><span class="pct">0</span><span class="track"><span class="fill"></span></span></div>
+                            <div class="skill" data-pct="80"><span class="name">NLP &amp; Chatbot Development</span><span class="pct">0</span><span class="track"><span class="fill"></span></span></div>
+                        </div>
+
+                        <div class="tech-row" aria-label="Tech stack">
+                            <span class="tech-chip" title="Python"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-chip" title="TensorFlow"><i class="fas fa-brain"></i> TensorFlow</span>
+                            <span class="tech-chip" title="PyTorch"><i class="fas fa-fire"></i> PyTorch</span>
+                            <span class="tech-chip" title="OpenCV"><i class="fas fa-eye"></i> OpenCV</span>
+                            <span class="tech-chip" title="Hugging Face"><i class="fas fa-face-smile"></i> Hugging Face</span>
+                            <span class="tech-chip" title="Docker"><i class="fab fa-docker"></i> Docker</span>
+                            <span class="tech-chip" title="Google Cloud"><i class="fab fa-google"></i> GCP</span>
+                            <span class="tech-chip" title="Git"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="tech-chip" title="SQL"><i class="fas fa-database"></i> SQL</span>
+                            <span class="tech-chip" title="Flutter"><i class="fas fa-mobile-screen"></i> Flutter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= EXPERIENCE -->
+        <section id="experience" aria-label="Experience timeline">
+            <div class="container">
+                <header class="section-head">
+                    <div class="section-eyebrow">// experience</div>
+                    <h2 class="section-title"><span class="letter-reveal">My </span><span class="accent letter-reveal">journey</span></h2>
+                </header>
+
+                <div class="timeline">
+                    <article class="tl-item left">
+                        <div class="tl-dot pulse" aria-hidden="true"></div>
+                        <div class="tl-card">
+                            <div class="tl-date">2024 — Present</div>
+                            <h4>AI &amp; ML Engineer</h4>
+                            <div class="co">Xact Mind Pvt Ltd.</div>
+                            <ul>
+                                <li>Shipping production ML/DL pipelines for predictive analytics &amp; automation.</li>
+                                <li>Driving model-optimisation work — quantisation, pruning, ONNX export.</li>
+                                <li>Building internal chatbot tooling with retrieval-augmented architectures.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="tl-item right">
+                        <div class="tl-dot" aria-hidden="true"></div>
+                        <div class="tl-card">
+                            <div class="tl-date">2022 — 2024</div>
+                            <h4>AI Research Assistant</h4>
+                            <div class="co">University Research Lab</div>
+                            <ul>
+                                <li>Researched reinforcement-learning algorithms for robotics applications.</li>
+                                <li>Co-authored two papers published at top-tier conferences.</li>
+                                <li>Built simulation environments + reward shaping for locomotion agents.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="tl-item left">
+                        <div class="tl-dot" aria-hidden="true"></div>
+                        <div class="tl-card">
+                            <div class="tl-date">2021 — 2023</div>
+                            <h4>Data Analyst</h4>
+                            <div class="co">Freelance / Self-employed</div>
+                            <ul>
+                                <li>Turned raw client data into actionable dashboards and forecasting models.</li>
+                                <li>Clients across healthcare, finance, retail and tech.</li>
+                                <li>End-to-end: ingestion → modelling → visualisation → deployment.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="tl-item right">
+                        <div class="tl-dot" aria-hidden="true"></div>
+                        <div class="tl-card">
+                            <div class="tl-date">2022 — Continuing</div>
+                            <h4>B.S. Software Engineering — AI specialisation</h4>
+                            <div class="co">University of Kotli AJ&amp;K</div>
+                            <ul>
+                                <li>Thesis: Novel approaches to transfer learning in computer vision.</li>
+                                <li>Coursework: ML, DL, distributed systems, HCI.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= CONTACT -->
+        <section id="contact" aria-label="Contact">
+            <div class="container">
+                <header class="section-head">
+                    <div class="section-eyebrow">// contact</div>
+                    <h2 class="section-title"><span class="letter-reveal">Let's </span><span class="accent letter-reveal">build</span><span class="letter-reveal"> something</span></h2>
+                    <p class="section-sub">Full-time roles, freelance projects, research collaborations — all welcome. I reply within 24h.</p>
+                </header>
+
+                <div class="contact-grid">
+                    <form id="contact-form" class="contact-form" action="https://formsubmit.co/itxjunaid22@gmail.com" method="POST" novalidate>
+                        <input type="hidden" name="_captcha" value="false" />
+                        <div class="field"><input id="c-name" name="name" type="text" required /><label for="c-name">Your name</label></div>
+                        <div class="field"><input id="c-email" name="email" type="email" required /><label for="c-email">Email address</label></div>
+                        <div class="field"><input id="c-subject" name="subject" type="text" required /><label for="c-subject">Subject</label></div>
+                        <div class="field"><textarea id="c-msg" name="message" required></textarea><label for="c-msg">Your message</label></div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send message</span> <i class="fas fa-paper-plane"></i>
+                            <span class="burst" aria-hidden="true"></span>
+                        </button>
+                    </form>
+
+                    <aside class="contact-aside">
+                        <div class="glass" style="padding:22px;">
+                            <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:6px;">Talk to me</h3>
+                            <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:14px;">
+                                <i class="fas fa-envelope" style="color:var(--accent-2);"></i>
+                                <a href="mailto:itxjunaid22@gmail.com" style="color:var(--text);">itxjunaid22@gmail.com</a><br/>
+                                <i class="fas fa-phone" style="color:var(--accent-2);"></i>
+                                <a href="tel:+923418914317" style="color:var(--text);">+92 341-8914317</a><br/>
+                                <i class="fas fa-location-dot" style="color:var(--accent-2);"></i>
+                                Kotli, Azad Jammu &amp; Kashmir, Pakistan
+                            </p>
+                        </div>
+
+                        <div class="social-cards">
+                            <a class="social-card" href="https://github.com/itsMeJunaid" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>GitHub</span></a>
+                            <a class="social-card" href="https://www.linkedin.com/in/mrzikomo/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+                            <a class="social-card" href="https://x.com/itsJunaid__" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i><span>Twitter</span></a>
+                            <a class="social-card" href="https://medium.com/@aishortspot" target="_blank" rel="noopener"><i class="fab fa-medium-m"></i><span>Medium</span></a>
+                        </div>
+
+                        <div class="contact-map" aria-label="Location map">
+                            <iframe title="Kotli location" loading="lazy" src="https://maps.google.com/maps?q=Kotli%20Azad%20Kashmir&t=&z=9&ie=UTF8&iwloc=&output=embed"></iframe>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; <span id="year"></span> Muhammad Junaid — crafted with <span class="heart">♥</span> and retrieval-augmented coffee.
+        </div>
+    </footer>
+
+    <!-- ========== Vendor JS ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.45/dist/lenis.min.js" defer></script>
+
+    <!-- ========== Own JS ========== -->
+    <script src="js/spa.js" defer></script>
+    <script src="js/chatbot.js" defer></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
